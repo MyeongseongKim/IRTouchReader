@@ -9,14 +9,12 @@ public class TouchPointInfo : MonoBehaviour
     public string phase;
     public TextMesh touchInfo;
 
-    public Vector2 pos;
+    public Vector2 pos; 
     public TextMesh touchPos;
-    GameObject touchManager;
 
     void Start() {
     }
 
-    // Update is called once per frame
     void Update() {
         touchInfo.text = "#" + id + " (" + phase + ")";
         touchPos.text = $"{pos}";
